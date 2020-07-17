@@ -30,8 +30,10 @@ const Entregable = () => {
     }
 
     function calc(){
-        const suma = primer_valor + segundo_valor + tercer_valor + cuarto_valor + quinto_valor + sexto_valor;
+        const suma = parseInt(primer_valor) + parseInt(segundo_valor) + parseInt(tercer_valor) + parseInt(cuarto_valor) + parseInt(quinto_valor) + parseInt(sexto_valor);
+        console.log(suma);
 
+        
         if (suma >= 1 && suma <= 18) {
             setResultado('Tu Perfil es Corto Plazo Conservador');
             setDireccion("https://ibb.co/D53K4ym")
