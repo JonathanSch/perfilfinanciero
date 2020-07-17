@@ -35,15 +35,12 @@ const MainContainer = () => {
     }, []);
     axios.get(URL)
         .then((res) => {
-            console.log(Object.values(res.data))
             useRef.current = Object.values(res.data)
 
 
         })
         .catch((error) => console.log(error));
 
-
-    console.log(useRef.current);
     const clicar = () => {
        valor = useRef.current;
 
